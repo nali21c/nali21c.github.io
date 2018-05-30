@@ -20,7 +20,7 @@
 <meta property="og:site_name" content="MarIt&#39;s Blog">
 <meta property="og:description" content="안녕하세요. 이번 글에서는 Hexo 와 Github 을 이용하여 블로그를 만드는 법에 대해 알아보겠습니다. 개발자에게 SNS란?… 강력한 브랜딩 수단 커리어 관리 개인 공부 등등  이 있는데요.  이에따른 많은 노력과 투자가 필요하죠. 당연히 티스토리, 네이버블로그, 워드프레스 등 많은 블로그들이 있지만 이번 글에서는 Hexo + Github 을 이용하여">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-05-30T13:29:18.171Z">
+<meta property="og:updated_time" content="2018-05-30T14:12:10.478Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[블로그]Hexo + Github 블로그 만들기">
 <meta name="twitter:description" content="안녕하세요. 이번 글에서는 Hexo 와 Github 을 이용하여 블로그를 만드는 법에 대해 알아보겠습니다. 개발자에게 SNS란?… 강력한 브랜딩 수단 커리어 관리 개인 공부 등등  이 있는데요.  이에따른 많은 노력과 투자가 필요하죠. 당연히 티스토리, 네이버블로그, 워드프레스 등 많은 블로그들이 있지만 이번 글에서는 Hexo + Github 을 이용하여">
@@ -101,7 +101,7 @@ ga('send', 'pageview');
                                     <a class="main-nav-list-link" href="/">Home</a>
                                 </li>
                             
-                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Dev/">Dev</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Dev/Blog/">Blog</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Marketing/">Marketing</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Marketing/Econ-Issue/">Econ/Issue</a></li></ul></li></ul>
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Dev/">Dev</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Dev/Blog/">Blog</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Marketing/">Marketing</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Marketing/Econ-Issue/">Econ/Issue</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Marketing/취업준비/">취업준비</a></li></ul></li></ul>
                                     
                         </ul>
                         <nav id="sub-nav">
@@ -211,7 +211,7 @@ ga('send', 'pageview');
 </ul>
 <p>등을 뽑을 수 있습니다. 여기서 <em><u>“Hexo란 무엇인가?. “</u></em>  라고 궁금해 하실 분들이 많으실텐데요. Open-Source Static Site Generator 입니다. 영어그대로 해석하면 오픈소스 기반의 정적 사이트 제너레이터인데, 공식 홈페이지에는 빠르고 심플하고 강력한 블로그 프레임워크(A fast, simple &amp; powerful blog framework) 라 명시되 있어요. 이정도면 느낌 오시죠? </p>
 <p>자 그럼 이제 본론으로 넘어가서, 설치를 시작해 보겠습니다. </p>
-<h5 id="설치-전-준비"><a href="#설치-전-준비" class="headerlink" title="설치 전 준비"></a>설치 전 준비</h5><ol>
+<h4 id="설치-전-준비"><a href="#설치-전-준비" class="headerlink" title="설치 전 준비"></a>설치 전 준비</h4><ol>
 <li><a href="https://github.com/" target="_blank" rel="noopener">Github</a> 아이디</li>
 <li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Nodejs</a></li>
 <li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
@@ -222,7 +222,7 @@ ga('send', 'pageview');
 <li>Public 선택</li>
 </ul>
 <p><em>USERNAME</em> 에는 자신의 username 을 입력합니다. Create Repository  를 클릭해 Repository 를 생성합니다. 두번째로는 2번의 링크를 따라가 LTS(안정화 버전을 다운받는 걸 추천드려요) 를 설치합니다. 마찬가지로 Git Bash를 이용하기 위해, 3번의 Git을 따라 들어가 설치해 줍니다.이제 준비는 끝났어요. </p>
-<h5 id="Hexo-설치"><a href="#Hexo-설치" class="headerlink" title="Hexo 설치"></a>Hexo 설치</h5><p>이제 블로그를 만들고 싶은 폴더로 들어가서 마우스 오른쪽 클릭을 하여 Git Bash를 클릭합니다.</p>
+<h4 id="Hexo-설치"><a href="#Hexo-설치" class="headerlink" title="Hexo 설치"></a>Hexo 설치</h4><p>이제 블로그를 만들고 싶은 폴더로 들어가서 마우스 오른쪽 클릭을 하여 Git Bash를 클릭합니다.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g  <span class="comment">#전역(-g)으로 hexo-cli 설치</span></span><br><span class="line">hexo init blog           <span class="comment">#새로운 프로젝트나 패키지를 만들때 사용. package.json을 만듬. </span></span><br><span class="line"><span class="built_in">cd</span> blog                  </span><br><span class="line">npm install              <span class="comment">#패키지 설치</span></span><br><span class="line">npm install hexo-deployer-git --save <span class="comment"># github에 올리기 위해서 설치(배포용 모듈)</span></span><br><span class="line">hexo server              <span class="comment">#서버구동(=hexo s)</span></span><br></pre></td></tr></table></figure>
 <p>여기서 init 은 새로운 프로젝트나 패키지를 만들때 사용하는데, package.json을 파일을 만들어줘요.이제 기본적인 설치는 끝났어요. 정말 간단하죠?. </p>
 <ul>
@@ -354,9 +354,9 @@ ga('send', 'pageview');
 <nav id="article-nav">
     
     
-        <a href="/2018/05/28/BalanceOfTrade/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/05/28/ReadyToWork01/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">미국의 골칫거리, 무역적자</p>
+        <p class="article-nav-title">[취업준비]취준생을 위한 실전 마케팅 1</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -370,7 +370,7 @@ ga('send', 'pageview');
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">categories</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/">Dev</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Blog/">Blog</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Marketing/">Marketing</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Marketing/Econ-Issue/">Econ/Issue</a><span class="category-list-count">1</span></li></ul></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/">Dev</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Blog/">Blog</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Marketing/">Marketing</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Marketing/Econ-Issue/">Econ/Issue</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Marketing/취업준비/">취업준비</a><span class="category-list-count">1</span></li></ul></li></ul>
         </div>
     </div>
 
@@ -380,7 +380,7 @@ ga('send', 'pageview');
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/hueman/" style="font-size: 10px;">hueman</a> <a href="/tags/경제/" style="font-size: 10px;">경제</a> <a href="/tags/관세전쟁/" style="font-size: 10px;">관세전쟁</a> <a href="/tags/글로벌전쟁/" style="font-size: 10px;">글로벌전쟁</a> <a href="/tags/무역적자/" style="font-size: 10px;">무역적자</a> <a href="/tags/미국/" style="font-size: 10px;">미국</a> <a href="/tags/위안화/" style="font-size: 10px;">위안화</a> <a href="/tags/중국/" style="font-size: 10px;">중국</a> <a href="/tags/팍스시키나/" style="font-size: 10px;">팍스시키나</a> <a href="/tags/환율/" style="font-size: 10px;">환율</a>
+            <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/hueman/" style="font-size: 10px;">hueman</a> <a href="/tags/경제/" style="font-size: 10px;">경제</a> <a href="/tags/관세전쟁/" style="font-size: 10px;">관세전쟁</a> <a href="/tags/글로벌전쟁/" style="font-size: 10px;">글로벌전쟁</a> <a href="/tags/마케팅/" style="font-size: 10px;">마케팅</a> <a href="/tags/무역적자/" style="font-size: 10px;">무역적자</a> <a href="/tags/미국/" style="font-size: 10px;">미국</a> <a href="/tags/소비트렌드/" style="font-size: 10px;">소비트렌드</a> <a href="/tags/위안화/" style="font-size: 10px;">위안화</a> <a href="/tags/장점어필/" style="font-size: 10px;">장점어필</a> <a href="/tags/중국/" style="font-size: 10px;">중국</a> <a href="/tags/취업/" style="font-size: 10px;">취업</a> <a href="/tags/취준생/" style="font-size: 10px;">취준생</a> <a href="/tags/타겟팅/" style="font-size: 10px;">타겟팅</a> <a href="/tags/팍스시키나/" style="font-size: 10px;">팍스시키나</a> <a href="/tags/홍보/" style="font-size: 10px;">홍보</a> <a href="/tags/환율/" style="font-size: 10px;">환율</a>
         </div>
     </div>
 
