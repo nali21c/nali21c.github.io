@@ -7,15 +7,29 @@
     </url>
 
     <url>
+        <loc>http://nali21c.github.io/categories/Dev/</loc>
+        <lastmod>2018-05-30T13:29:18.171Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nali21c.github.io/categories/Dev/Blog/</loc>
+        <lastmod>2018-05-30T13:29:18.171Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://nali21c.github.io/categories/Marketing/</loc>
-        <lastmod>2018-05-29T14:52:36.955Z</lastmod>
+        <lastmod>2018-05-30T13:37:22.683Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://nali21c.github.io/categories/Marketing/Econ-Issue/</loc>
-        <lastmod>2018-05-29T14:52:36.955Z</lastmod>
+        <lastmod>2018-05-30T13:37:22.683Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
