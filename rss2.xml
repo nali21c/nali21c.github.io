@@ -8,8 +8,28 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>MarIt&#39;s Blog</description>
-    <pubDate>Wed, 30 May 2018 14:12:10 GMT</pubDate>
+    <pubDate>Wed, 30 May 2018 14:23:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>[취업]취준생을 위한 실전 마케팅 1</title>
+      <link>http://nali21c.github.io/2018/05/30/ReadyToWork01/</link>
+      <guid>http://nali21c.github.io/2018/05/30/ReadyToWork01/</guid>
+      <pubDate>Wed, 30 May 2018 13:51:58 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;h2 id=&quot;주목해야-할-것은-장점뿐이다&quot;&gt;&lt;a href=&quot;#주목해야-할-것은-장점뿐이다&quot; class=&quot;headerlink&quot; title=&quot;주목해야 할 것은 장점뿐이다.&quot;&gt;&lt;/a&gt;주목해야 할 것은 장점뿐이다.&lt;/h2&gt;&lt;/bloc
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<blockquote><h2 id="주목해야-할-것은-장점뿐이다"><a href="#주목해야-할-것은-장점뿐이다" class="headerlink" title="주목해야 할 것은 장점뿐이다."></a>주목해야 할 것은 장점뿐이다.</h2></blockquote><h4 id="제목의-의미"><a href="#제목의-의미" class="headerlink" title="제목의 의미"></a>제목의 의미</h4><p>글의 제목을 보고 무슨 말인가 했을 테지만, 문장 그대로 장점’만’ 중요하다는 뜻이다. 흔히들 단점은 보완하고 장점은 더 키워야 한다고 한다. 그렇지만 생각보다 사람들은 단점을 보완한 결과에 주목하지 않는다. 주변에 심각한 피해를 주거나, 평소에도 의식할 만한 단점이 아니라면 굳이 그것이 고쳐진다고 해서 성과로 인정받지는 않는다는 말이다. 하지만 장점이라면 얘기가 달라진다. 단점에도 ‘불구’하고 어떤 것을 선택할 만한 이유를 만들어주는 것이 바로 장점이기 때문이다.</p><h4 id="타겟팅과-장점"><a href="#타겟팅과-장점" class="headerlink" title="타겟팅과 장점"></a>타겟팅과 장점</h4><p>이렇게 개인화된 소비 성향은 시간이 지날수록 다양한 소비 그룹을 만들어내서, 이제는 예전처럼 소비자들을 하나로 뭉뚱그려 제품을 홍보하면 외면 받게 된다. 그렇기에 마케터들은 먼저 홍보할 타겟을 정하고, 그 타겟들이 매력을 느낄만한 제품의 장점을 선별하여 메시지를 만든다. 타겟팅은 간단하게는 연령부터 성향, 관심사 등 다양한 조건을 적용할 수 있다.</p><p>타겟팅이 완료되었다면, 그 타겟들에게 장점을 어필해야 한다. 공급이 넘쳐나고 소비자의 수요가 기업을 울고 웃게 만드는 이때, 소비자의 마음을 빼앗기 위한 신제품들이 하루에도 엄청나게 쏟아져 나오고 있다. 그리고 소비자들이 보았을 때, 그 제품들은 모두 ‘고만 고만’하다. 그 사이에서 살아남기 위한 특별한 장점 어필이 필요한 이유다. </p><p>다른 상품에 비해 좋은 점이 없는 것 같다고 실망할 필요도 없다. 그 장점이 정말 객관적일 필요는 없기 때문이다. SNS에는 ‘예쁜 쓰레기’ 태그가 걸린 게시물이 많다. 정말 필요 없어 보이는 것도 ‘감성값’이라며 기꺼이 구매하는 경향을 보인다. 이렇게 특별한 장점을 만들어내는 방법은 다양하다. 스토리텔링으로 가치를 부여하거나, 기대효과에서 발생하는 장점을 어필할 수도 있다.</p><h4 id="마케터를-꿈꾸는-취준생에게"><a href="#마케터를-꿈꾸는-취준생에게" class="headerlink" title="마케터를 꿈꾸는 취준생에게"></a>마케터를 꿈꾸는 취준생에게</h4><p>단점에도 불구하고 선택할 이유를 만들어내는 것. 그것이 마케터가 할 일이고, 이 일에는 제품에 대한 전체적인 이해와 장점 여러 개 중 방향을 정하는 깊은 고민은 기본이다. 마케터의 일은 험하다. 필자의 상사는 이번 생은 망했다며 다시 태어나면 기획과 마케팅은 하지 않는다고 말할 정도다. 하지만 힘든 만큼 재미 있다. 필자의 상사가 아직까지 마케팅을 하고 있는 이유가 아닐까.</p>]]></content:encoded>
+      
+      <comments>http://nali21c.github.io/2018/05/30/ReadyToWork01/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>[블로그]Hexo + Github 블로그 만들기</title>
@@ -29,26 +49,6 @@
       <content:encoded><![CDATA[<p>안녕하세요. 이번 글에서는 Hexo 와 Github 을 이용하여 블로그를 만드는 법에 대해 알아보겠습니다.</p><h4 id="개발자에게-SNS란-…"><a href="#개발자에게-SNS란-…" class="headerlink" title="개발자에게 SNS란?…"></a>개발자에게 SNS란?…</h4><ul><li>강력한 브랜딩 수단</li><li>커리어 관리</li><li>개인 공부</li><li>등등</li></ul><p>이 있는데요.  이에따른 많은 노력과 투자가 필요하죠. 당연히 티스토리, 네이버블로그, 워드프레스 등 많은 블로그들이 있지만 이번 글에서는 Hexo + Github 을 이용하여 만들어보겠습니다.  </p><p>우선 Hexo + Github 장점으로는 </p><ul><li>정적 웹페이지<br> -&gt;  DB가 필요없고 구축이 쉬움<br> -&gt;  단순문서 형태 =&gt; 속도가 빠름<br> -&gt;  백업/복원이 쉬움<br> -&gt;  비용이 저렴</li><li>JS + Nodejs 기반</li><li>마크다운(MarkDown) 지원</li><li>Github pages 호스팅 지원</li><li>다양한 테마</li><li>다양한 플러그인</li></ul><p>등을 뽑을 수 있습니다. 여기서 <em><u>“Hexo란 무엇인가?. “</u></em>  라고 궁금해 하실 분들이 많으실텐데요. Open-Source Static Site Generator 입니다. 영어그대로 해석하면 오픈소스 기반의 정적 사이트 제너레이터인데, 공식 홈페이지에는 빠르고 심플하고 강력한 블로그 프레임워크(A fast, simple &amp; powerful blog framework) 라 명시되 있어요. 이정도면 느낌 오시죠? </p><p>자 그럼 이제 본론으로 넘어가서, 설치를 시작해 보겠습니다. </p><h4 id="설치-전-준비"><a href="#설치-전-준비" class="headerlink" title="설치 전 준비"></a>설치 전 준비</h4><ol><li><a href="https://github.com/" target="_blank" rel="noopener">Github</a> 아이디</li><li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Nodejs</a></li><li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li></ol><p>첫번째로는 Github  아이디가 있어야 합니다. 들어가서 회원가입을 하고 나서 New repository를 클릭합니다.</p><ul><li>Repository name : <em>USERNAME</em>.github.io</li><li>Public 선택</li></ul><p><em>USERNAME</em> 에는 자신의 username 을 입력합니다. Create Repository  를 클릭해 Repository 를 생성합니다. 두번째로는 2번의 링크를 따라가 LTS(안정화 버전을 다운받는 걸 추천드려요) 를 설치합니다. 마찬가지로 Git Bash를 이용하기 위해, 3번의 Git을 따라 들어가 설치해 줍니다.이제 준비는 끝났어요. </p><h4 id="Hexo-설치"><a href="#Hexo-설치" class="headerlink" title="Hexo 설치"></a>Hexo 설치</h4><p>이제 블로그를 만들고 싶은 폴더로 들어가서 마우스 오른쪽 클릭을 하여 Git Bash를 클릭합니다.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g  <span class="comment">#전역(-g)으로 hexo-cli 설치</span></span><br><span class="line">hexo init blog           <span class="comment">#새로운 프로젝트나 패키지를 만들때 사용. package.json을 만듬. </span></span><br><span class="line"><span class="built_in">cd</span> blog                  </span><br><span class="line">npm install              <span class="comment">#패키지 설치</span></span><br><span class="line">npm install hexo-deployer-git --save <span class="comment"># github에 올리기 위해서 설치(배포용 모듈)</span></span><br><span class="line">hexo server              <span class="comment">#서버구동(=hexo s)</span></span><br></pre></td></tr></table></figure><p>여기서 init 은 새로운 프로젝트나 패키지를 만들때 사용하는데, package.json을 파일을 만들어줘요.이제 기본적인 설치는 끝났어요. 정말 간단하죠?. </p><ul><li><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a></li></ul><p>이제 위의 링크와 같이 로컬의 4000포트로 접속이 가능해요.(만약 접속이 안된다면, 위의 Hexo 설치 과정을 다시한번 확인해 봐야합니다.) 접속이 된 것을 확인하셨으면 이제 Github 와 연결해야겠죠? 일단 서버를 종료합니다. 서버를 끄는 방법은 터미널에서 <code>ctrl+c</code> 를 입력하면 되요. </p><p>다시 방금 만든 blog 폴더에 들어가 <strong>_config.yml</strong>  이라는 파일의 아래 내용을 수정해 줍니다.</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line">deploy:</span><br><span class="line"> <span class="built_in">type</span>: git</span><br><span class="line"> repo: https://github.com/아이디/아이디.github.io.git</span><br><span class="line"> branch: master</span><br></pre></td></tr></table></figure><p><em>아이디</em> 는 처음만든 본인의 아이디(username)를 입력하시면되요. 이제 다시 Git Bash로 넘어와</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate <span class="comment">#배포용 파일을 생성</span></span><br><span class="line">hexo deploy   <span class="comment">#Github에 배포</span></span><br></pre></td></tr></table></figure><p>위의 내용을 한번에 입력하시려면,</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy --generate <span class="comment"># =(hexo d -g)</span></span><br></pre></td></tr></table></figure><p>이제 정말 끝났네요. 이제 본인의 블로그에 들어가 보세요.</p><ul><li>https://아이디.github.io/</li></ul><p>잘 작동하나요? 이상 Hexo와 Github 를 사용하여 블로그 만드는 법을 알아보았습니다.</p>]]></content:encoded>
       
       <comments>http://nali21c.github.io/2018/05/30/Hexo/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>[취업준비]취준생을 위한 실전 마케팅 1</title>
-      <link>http://nali21c.github.io/2018/05/28/ReadyToWork01/</link>
-      <guid>http://nali21c.github.io/2018/05/28/ReadyToWork01/</guid>
-      <pubDate>Mon, 28 May 2018 13:51:58 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;h2 id=&quot;주목해야-할-것은-장점뿐이다&quot;&gt;&lt;a href=&quot;#주목해야-할-것은-장점뿐이다&quot; class=&quot;headerlink&quot; title=&quot;주목해야 할 것은 장점뿐이다.&quot;&gt;&lt;/a&gt;주목해야 할 것은 장점뿐이다.&lt;/h2&gt;&lt;/bloc
-        
-      
-      </description>
-      
-      <content:encoded><![CDATA[<blockquote><h2 id="주목해야-할-것은-장점뿐이다"><a href="#주목해야-할-것은-장점뿐이다" class="headerlink" title="주목해야 할 것은 장점뿐이다."></a>주목해야 할 것은 장점뿐이다.</h2></blockquote><h4 id="제목의-의미"><a href="#제목의-의미" class="headerlink" title="제목의 의미"></a>제목의 의미</h4><p>글의 제목을 보고 무슨 말인가 했을 테지만, 문장 그대로 장점’만’ 중요하다는 뜻이다. 흔히들 단점은 보완하고 장점은 더 키워야 한다고 한다. 그렇지만 생각보다 사람들은 단점을 보완한 결과에 주목하지 않는다. 주변에 심각한 피해를 주거나, 평소에도 의식할 만한 단점이 아니라면 굳이 그것이 고쳐진다고 해서 성과로 인정받지는 않는다는 말이다. 하지만 장점이라면 얘기가 달라진다. 단점에도 ‘불구’하고 어떤 것을 선택할 만한 이유를 만들어주는 것이 바로 장점이기 때문이다.</p><h4 id="타겟팅과-장점"><a href="#타겟팅과-장점" class="headerlink" title="타겟팅과 장점"></a>타겟팅과 장점</h4><p>이렇게 개인화된 소비 성향은 시간이 지날수록 다양한 소비 그룹을 만들어내서, 이제는 예전처럼 소비자들을 하나로 뭉뚱그려 제품을 홍보하면 외면 받게 된다. 그렇기에 마케터들은 먼저 홍보할 타겟을 정하고, 그 타겟들이 매력을 느낄만한 제품의 장점을 선별하여 메시지를 만든다. 타겟팅은 간단하게는 연령부터 성향, 관심사 등 다양한 조건을 적용할 수 있다.</p><p>타겟팅이 완료되었다면, 그 타겟들에게 장점을 어필해야 한다. 공급이 넘쳐나고 소비자의 수요가 기업을 울고 웃게 만드는 이때, 소비자의 마음을 빼앗기 위한 신제품들이 하루에도 엄청나게 쏟아져 나오고 있다. 그리고 소비자들이 보았을 때, 그 제품들은 모두 ‘고만 고만’하다. 그 사이에서 살아남기 위한 특별한 장점 어필이 필요한 이유다. </p><p>다른 상품에 비해 좋은 점이 없는 것 같다고 실망할 필요도 없다. 그 장점이 정말 객관적일 필요는 없기 때문이다. SNS에는 ‘예쁜 쓰레기’ 태그가 걸린 게시물이 많다. 정말 필요 없어 보이는 것도 ‘감성값’이라며 기꺼이 구매하는 경향을 보인다. 이렇게 특별한 장점을 만들어내는 방법은 다양하다. 스토리텔링으로 가치를 부여하거나, 기대효과에서 발생하는 장점을 어필할 수도 있다.</p><h4 id="마케터를-꿈꾸는-취준생에게"><a href="#마케터를-꿈꾸는-취준생에게" class="headerlink" title="마케터를 꿈꾸는 취준생에게"></a>마케터를 꿈꾸는 취준생에게</h4><p>단점에도 불구하고 선택할 이유를 만들어내는 것. 그것이 마케터가 할 일이고, 이 일에는 제품에 대한 전체적인 이해와 장점 여러 개 중 방향을 정하는 깊은 고민은 기본이다. 마케터의 일은 험하다. 필자의 상사는 이번 생은 망했다며 다시 태어나면 기획과 마케팅은 하지 않는다고 말할 정도다. 하지만 힘든 만큼 재미 있다. 필자의 상사가 아직까지 마케팅을 하고 있는 이유가 아닐까.</p>]]></content:encoded>
-      
-      <comments>http://nali21c.github.io/2018/05/28/ReadyToWork01/#disqus_thread</comments>
     </item>
     
     <item>
