@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://nali21c.github.io/2018/05/30/Hexo/</loc>
+        <lastmod>2018-06-13T17:17:40.691Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://nali21c.github.io/2018/05/30/ReadyToWork01/</loc>
         <lastmod>2018-06-13T15:23:27.505Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -49,14 +57,6 @@
     <url>
         <loc>http://nali21c.github.io/2018/06/13/India-EmergingMarket/</loc>
         <lastmod>2018-06-13T15:19:31.175Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://nali21c.github.io/2018/05/30/Hexo/</loc>
-        <lastmod>2018-05-30T14:12:10.478Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
