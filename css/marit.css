@@ -36,18 +36,32 @@
   }
 }
 
+.popular-posts{
+  -webkit-margin-before: 0.4em;
+  -webkit-margin-after: 0.4em;
+}
 .popular-posts h2{
   font-size: 1.5em;
-  font-style: italic;
+  /* font-style: italic; */
+  line-height: 1.2em;
+  color: #555;
+  font-weight: 600;
+  -webkit-margin-before: 0.7em;
+  -webkit-margin-after: 0.7em;
 }
+
 .popular-posts a{
   font-size: 1.3em;
   text-decoration: none;
-  color: #0064FF;
-  font-weight: none;
+  color: #006bde;
+  font-weight: 100;
 }
 
 .popular-posts a:hover{
   text-decoration: none;
   color: #FF0040;
+}
+
+div .article-tag{
+  float: right;
 }
