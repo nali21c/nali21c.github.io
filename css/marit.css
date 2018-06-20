@@ -62,6 +62,9 @@
   color: #FF0040;
 }
 
-div .article-date{
+div .article-tag{
   float: right;
 }
+
+/* 그림중앙정렬 */
+img.aligncenter{display:block;margin:0 auto}
