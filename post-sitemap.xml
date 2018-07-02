@@ -7,8 +7,8 @@
     </url>
 
     <url>
-        <loc>http://nali21c.github.io/2018/07/01/4mat/</loc>
-        <lastmod>2018-07-01T05:52:04.561Z</lastmod>
+        <loc>http://nali21c.github.io/2018/07/02/worldcup-2018/</loc>
+        <lastmod>2018-07-02T15:45:15.283Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -16,7 +16,15 @@
 
     <url>
         <loc>http://nali21c.github.io/2018/06/29/version-bit-upgrade/</loc>
-        <lastmod>2018-06-28T15:36:35.285Z</lastmod>
+        <lastmod>2018-07-02T14:40:31.586Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://nali21c.github.io/2018/07/01/4mat/</loc>
+        <lastmod>2018-07-01T05:52:04.561Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
