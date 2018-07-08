@@ -127,7 +127,16 @@ ga('send', 'pageview');
     <form class="search-form">
         <input type="text" class="ins-search-input search-form-input" placeholder="Search">
         <button type="submit" class="search-form-submit"></button>
+        
+        <!-- google translation -->
+        <div id="google_translate_element" style="float: right;"></div><script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'en,ko', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-114388030-1'}, 'google_translate_element');
+            }
+            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+       
     </form>
+    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
@@ -341,6 +350,8 @@ ga('send', 'pageview');
             
         </ul>
     </div>
+                               
+    <!--
     
         
 <nav id="article-nav">
@@ -365,6 +376,8 @@ ga('send', 'pageview');
 </nav>
 
     
+    -->
+
     <div class="widgets-container">
         
             
@@ -390,6 +403,7 @@ ga('send', 'pageview');
             
         
     </div>
+    
 
     <!-- ads -->
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
