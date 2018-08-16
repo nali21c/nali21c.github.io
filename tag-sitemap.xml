@@ -254,13 +254,6 @@
     </url>
 
     <url>
-        <loc>http://nali21c.github.io/tags/%EB%AF%B8%EA%B5%AD/</loc>
-        <lastmod>2018-06-20T16:24:54.785Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://nali21c.github.io/tags/%EB%AC%B4%EC%97%AD%EC%A0%81%EC%9E%90/</loc>
         <lastmod>2018-06-20T16:24:54.785Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -541,13 +534,6 @@
     </url>
 
     <url>
-        <loc>http://nali21c.github.io/tags/%ED%8A%B8%EB%9F%BC%ED%94%84/</loc>
-        <lastmod>2018-07-15T16:11:21.087Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://nali21c.github.io/tags/%EC%9E%90%EB%8F%99%EC%B0%A8/</loc>
         <lastmod>2018-07-15T16:11:21.087Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -627,6 +613,48 @@
     <url>
         <loc>http://nali21c.github.io/tags/%EC%8A%A4%ED%83%80%ED%8A%B8%EC%97%85/</loc>
         <lastmod>2018-07-24T13:35:26.644Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nali21c.github.io/tags/%EB%AF%B8%EA%B5%AD/</loc>
+        <lastmod>2018-08-16T00:21:35.649Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nali21c.github.io/tags/%ED%84%B0%ED%82%A4/</loc>
+        <lastmod>2018-08-16T00:21:35.649Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nali21c.github.io/tags/%EC%97%90%EB%A5%B4%EB%8F%84%EC%95%88/</loc>
+        <lastmod>2018-08-16T00:21:35.649Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nali21c.github.io/tags/%ED%8A%B8%EB%9F%BC%ED%94%84/</loc>
+        <lastmod>2018-08-16T00:21:35.649Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nali21c.github.io/tags/%EB%AC%B4%EC%97%AD%EC%A0%84%EC%9F%81/</loc>
+        <lastmod>2018-08-16T00:21:35.649Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nali21c.github.io/tags/%EA%B4%80%EC%84%B8/</loc>
+        <lastmod>2018-08-16T00:21:35.649Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
