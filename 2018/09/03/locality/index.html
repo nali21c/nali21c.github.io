@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+   
+    
+
+    
+    <title>locality 개념 | MarIt&#39;s Blog</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="locality 정의,locality란,spatial locality,temporal locality,알고리즘 면접">
+    
+    <meta name="description" content="안녕하세요. 이번 글에서는 Locality에 대해서 알아보겠습니다. 호기심을 더하기 위해서 문제 하나 내 볼께요. 두 가지 중에 어느 것이 더 빠를까요? 1234567891011// 1번int a[100][100];for(i=0; i&amp;lt;100; i++) &amp;#123;    for(j=0; j&amp;lt;100; j++)    &amp;#123;        a[i]">
+<meta name="keywords" content="locality 정의,locality란,spatial locality,temporal locality,알고리즘 면접">
+<meta property="og:type" content="article">
+<meta property="og:title" content="locality 개념">
+<meta property="og:url" content="http://nali21c.github.io/2018/09/03/locality/index.html">
+<meta property="og:site_name" content="MarIt&#39;s Blog">
+<meta property="og:description" content="안녕하세요. 이번 글에서는 Locality에 대해서 알아보겠습니다. 호기심을 더하기 위해서 문제 하나 내 볼께요. 두 가지 중에 어느 것이 더 빠를까요? 1234567891011// 1번int a[100][100];for(i=0; i&amp;lt;100; i++) &amp;#123;    for(j=0; j&amp;lt;100; j++)    &amp;#123;        a[i]">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://nali21c.github.io/images/locality.PNG">
+<meta property="og:updated_time" content="2018-09-03T06:05:24.537Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="locality 개념">
+<meta name="twitter:description" content="안녕하세요. 이번 글에서는 Locality에 대해서 알아보겠습니다. 호기심을 더하기 위해서 문제 하나 내 볼께요. 두 가지 중에 어느 것이 더 빠를까요? 1234567891011// 1번int a[100][100];for(i=0; i&amp;lt;100; i++) &amp;#123;    for(j=0; j&amp;lt;100; j++)    &amp;#123;        a[i]">
+<meta name="twitter:image" content="http://nali21c.github.io/images/locality.PNG">
+    
+    <link rel="canonical" href="http://nali21c.github.io/2018/09/03/locality/">
+
+    
+        <link rel="alternate" href="https://nali21c.github.io/rss2.xml" title="MarIt&#39;s Blog" type="application/atom+xml">
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-114388030-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+
+
+
+    <!-- GoogleAd -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-6371292217786920",
+          enable_page_level_ads: true
+     });
+</script>
+
+    <!-- bing Web -->
+    <meta name="msvalidate.01" content="8490797FD49E6437809F38ECC12B1252">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114388030-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114388030-1');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W79SMRX');</script>
+
+    <!-- 스크립트 DATA 영역 -->
+    <link rel="stylesheet" href="/css/marit.css">
+</head>
+</html>
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">Marketer &amp; Developer and Together</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item">
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Dev/">Dev</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Dev/Basic-Concept/">Basic/Concept</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Dev/Blog/">Blog</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Dev/Linux/">Linux</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Marketing/">Marketing</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Marketing/Econ-Issue/">Econ/Issue</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Marketing/취업준비/">취업준비</a></li></ul></li></ul>
+                                    
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <!-- google translation -->
+      <div id="google_translate_element" style="float: right;"></div><script type="text/javascript">
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'ko', includedLanguages: 'en,ko', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-114388030-1'}, 'google_translate_element');
+        }
+        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <button type="submit" class="search-form-submit"></button>
+     </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+
+
+                            </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Dev/">Dev</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Dev/Basic-Concept/">Basic/Concept</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <div style="text-align: center;">
+<span>
+<style type="text/css">
+    @media(max-width: 420px) { .adsize { height: 100px; } }
+</style>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 상단_하단_반응형 -->
+<ins class="adsbygoogle adsize" style="display:block" data-ad-client="ca-pub-6371292217786920" data-ad-slot="6070330978" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</span>
+</div>
+                            <article id="post-locality" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        locality 개념
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/09/03/locality/" class="article-date">
+            <time datetime="2018-09-03T05:01:45.000Z" itemprop="datePublished">2018-09-03</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/locality-정의/">locality 정의</a>, <a class="tag-link" href="/tags/locality란/">locality란</a>, <a class="tag-link" href="/tags/spatial-locality/">spatial locality</a>, <a class="tag-link" href="/tags/temporal-locality/">temporal locality</a>, <a class="tag-link" href="/tags/알고리즘-면접/">알고리즘 면접</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="/images/locality.PNG" width="450em" height="400em" align="center"></p>
+<p>안녕하세요. 이번 글에서는 Locality에 대해서 알아보겠습니다.</p>
+<p>호기심을 더하기 위해서 문제 하나 내 볼께요. 두 가지 중에 어느 것이 더 빠를까요?</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// 1번</span><br><span class="line"></span><br><span class="line">int a[100][100];</span><br><span class="line"></span><br><span class="line">for(i=0; i&lt;100; i++)</span><br><span class="line"> &#123;</span><br><span class="line">    for(j=0; j&lt;100; j++)</span><br><span class="line">    &#123;</span><br><span class="line">        a[i][j] = 10;    </span><br><span class="line">    &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p> Or</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// 2번</span><br><span class="line"></span><br><span class="line">for(i=0; i&lt;100; i++)</span><br><span class="line"> &#123;</span><br><span class="line">    for(j=0; j&lt;100; j++)</span><br><span class="line">    &#123;</span><br><span class="line">       a[j][i] = 10;    </span><br><span class="line">    &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p>고민을 조금 해보셨나요? 정답은…</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6371292217786920" data-ad-slot="9384666126"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<p>1번, <strong>Spatial locality</strong>와 관련이 있습니다. 본론으로 넘어가볼께요.</p>
+<h2 id="locality-정의"><a href="#locality-정의" class="headerlink" title="locality 정의"></a>locality 정의</h2><ul>
+<li>기억 장치 내의 정보를 균일하게 접근하는 것이 아닌 어느 한순간에 특정 부분을 집중적으로 참조하는 특성</li>
+</ul>
+<p>제가 조금 더 쉽게 예를 들어 보겠습니다. 저에게는 짝사랑하는 여자사람이 있어요. 그 여자분은 ‘A 카페’ 의 수박 주스를 아주 좋아한다는 정보를 얻었어요. 마침 운이 좋게 데이트 신청을 하였는데 이번 주 주말에 시간이 될 것 같다고 하는 거예요. 그렇다면 저는 여러 계획을 세울 거예요..</p>
+<ul>
+<li style="list-style: none"><input type="checkbox"> ‘a카페’에서 수박주스 먹기</li>
+<li style="list-style: none"><input type="checkbox"> ‘a카페’ 근처의 맛집 찾아보기</li>
+<li style="list-style: none"><input type="checkbox"> 등등</li>
+</ul>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hc-7+2h-1m-4u" data-ad-client="ca-pub-6371292217786920" data-ad-slot="4938542662"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<p>이제 조금 이해가 되셨나요? 결론적으로는 CPU가 Memory로부터 Data를 가져오는 데 있어서 <strong>가장 최근 영역</strong>에, <strong>가장 접근하기 가까운 영역</strong>에 Data를 저장하면 훨씬 효과적이라는 것입니다.</p>
+<p><img src="/images/MemoryStructure.PNG" width="600em" height="600em" align="center"></p>
+<h2 id="대표적인-Locality의-종류"><a href="#대표적인-Locality의-종류" class="headerlink" title="대표적인 Locality의 종류"></a>대표적인 Locality의 종류</h2><h5 id="1-Temporal-locality"><a href="#1-Temporal-locality" class="headerlink" title="1. Temporal locality"></a>1. Temporal locality</h5><ul>
+<li>설명<ul>
+<li>최근 사용되었던 기억 장소들이 집중적으로 엑세스되는 경향.</li>
+<li>프로그램 실행시 한번 접근이 이루어진 주소의 메모리 영역은 자주 접하게 된다는  프로그램 성격 표현.</li>
+</ul>
+</li>
+<li>예<ul>
+<li>순환, Sub program, Stack 등등.</li>
+</ul>
+</li>
+</ul>
+<h5 id="2-Spatical-locality"><a href="#2-Spatical-locality" class="headerlink" title="2. Spatical locality"></a>2. Spatical locality</h5><ul>
+<li>설명<ul>
+<li>특정 클레스터의 기억 장소들에대해 참조가 집중적으로 이루어지는 경향.</li>
+<li>프로그램 실행시 접근하는 메모리의 영역은 이미 접근이 이루어진 영역의 근처일 확률이 높다는 프로그램 성격 표현.</li>
+</ul>
+</li>
+<li>예<ul>
+<li>Sequential processing, Array 등등.</li>
+</ul>
+</li>
+</ul>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6371292217786920" data-ad-slot="9384666126"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<h2 id="Locality의-활용"><a href="#Locality의-활용" class="headerlink" title="Locality의 활용"></a>Locality의 활용</h2><h5 id="1-Working-Set을-통한-thrashing-방지"><a href="#1-Working-Set을-통한-thrashing-방지" class="headerlink" title="1. Working Set을 통한 thrashing 방지."></a>1. Working Set을 통한 thrashing 방지.</h5><ul>
+<li>Working Set : 어느 시점에 특정 프로세스가 접근하는 page들의 집합(프로세스의 locality).</li>
+<li>Thrashing : 실행 시간보다 페이지를 찾는데 시간과 자원이 소비되는 현상.</li>
+</ul>
+<h5 id="2-Fetch-알고리즘"><a href="#2-Fetch-알고리즘" class="headerlink" title="2. Fetch 알고리즘"></a>2. Fetch 알고리즘</h5><ul>
+<li>Pre-fetch : 필요한 정보와 예상 정보를 미리 인출하여 배치.</li>
+</ul>
+<h5 id="3-CDN-Contents-Delivery-Network-에서-공간-지역성을-활용한-지역-Cache-서버-구성"><a href="#3-CDN-Contents-Delivery-Network-에서-공간-지역성을-활용한-지역-Cache-서버-구성" class="headerlink" title="3. CDN(Contents Delivery Network)에서 공간 지역성을 활용한 지역 Cache 서버 구성"></a>3. CDN(Contents Delivery Network)에서 공간 지역성을 활용한 지역 Cache 서버 구성</h5><h5 id="4-등등"><a href="#4-등등" class="headerlink" title="4. 등등"></a>4. 등등</h5><p>이상 locality에 대해서 알아보았습니다. </p>
+
+        </div>
+        
+        <!-- 연관검색어설정  -->
+        
+
+        <!-- ads  -->
+        <div style="text-align: center;">
+<span>
+<style type="text/css">
+    @media(max-width: 420px) { .adsize { height: 100px; } }
+</style>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 상단_하단_반응형 -->
+<ins class="adsbygoogle adsize" style="display:block" data-ad-client="ca-pub-6371292217786920" data-ad-slot="6070330978" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</span>
+</div>    
+
+        <footer class="article-footer">
+            
+
+
+    <div class="a2a_kit a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share" rel="external nofollow noopener noreferrer" target="_blank">Share</a>
+    <span class="a2a_divider"></span>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_tumblr"></a>
+</div>
+<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+<style>
+    .a2a_menu {
+        border-radius: 4px;
+    }
+    .a2a_menu a {
+        margin: 2px 0;
+        font-size: 14px;
+        line-height: 16px;
+        border-radius: 4px;
+        color: inherit !important;
+        font-family: 'Microsoft Yahei';
+    }
+    #a2apage_dropdown {
+        margin: 10px 0;
+    }
+    .a2a_mini_services {
+        padding: 10px;
+    }
+    a.a2a_i,
+    i.a2a_i {
+        width: 122px;
+        line-height: 16px;
+    }
+    a.a2a_i .a2a_svg,
+    a.a2a_more .a2a_svg {
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        vertical-align: top;
+        background-size: 16px;
+    }
+    a.a2a_i {
+        border: none !important;
+    }
+    a.a2a_menu_show_more_less {
+        margin: 0;
+        padding: 10px 0;
+        line-height: 16px;
+    }
+    .a2a_mini_services:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+    .a2a_mini_services{*+height:1%;}
+</style>
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/nali21c" target="_blank" rel="external nofollow noopener noreferrer">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="linkedin" href="https://www.linkedin.com/in/yongeun-noh" target="_blank" rel="external nofollow noopener noreferrer">
+                        <i class="icon fa fa-linkedin"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="https://nali21c.github.io/rss2.xml" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+                               
+    <!--
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2018/08/26/microsoft/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">MS, 다시 해냈다!</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    -->
+
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/">Dev</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Basic-Concept/">Basic/Concept</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Blog/">Blog</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Linux/">Linux</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Marketing/">Marketing</a><span class="category-list-count">18</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Marketing/Econ-Issue/">Econ/Issue</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Marketing/취업준비/">취업준비</a><span class="category-list-count">5</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">tag cloud</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/4MAT/" style="font-size: 10px;">4MAT</a> <a href="/tags/4차산업혁명/" style="font-size: 10px;">4차산업혁명</a> <a href="/tags/FIFA/" style="font-size: 10px;">FIFA</a> <a href="/tags/FTA/" style="font-size: 10px;">FTA</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Locale/" style="font-size: 10px;">Locale</a> <a href="/tags/M-A/" style="font-size: 10px;">M&A</a> <a href="/tags/MS/" style="font-size: 10px;">MS</a> <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/hueman/" style="font-size: 10px;">hueman</a> <a href="/tags/locality-정의/" style="font-size: 10px;">locality 정의</a> <a href="/tags/locality란/" style="font-size: 10px;">locality란</a> <a href="/tags/spatial-locality/" style="font-size: 10px;">spatial locality</a> <a href="/tags/temporal-locality/" style="font-size: 10px;">temporal locality</a> <a href="/tags/vi/" style="font-size: 10px;">vi</a> <a href="/tags/vi-편집기/" style="font-size: 10px;">vi 편집기</a> <a href="/tags/결정권자/" style="font-size: 10px;">결정권자</a> <a href="/tags/경제/" style="font-size: 10px;">경제</a> <a href="/tags/계약/" style="font-size: 10px;">계약</a> <a href="/tags/공감/" style="font-size: 10px;">공감</a> <a href="/tags/관세/" style="font-size: 10px;">관세</a> <a href="/tags/관세전쟁/" style="font-size: 10px;">관세전쟁</a> <a href="/tags/글로벌전쟁/" style="font-size: 10px;">글로벌전쟁</a> <a href="/tags/기내식/" style="font-size: 10px;">기내식</a> <a href="/tags/기차/" style="font-size: 10px;">기차</a> <a href="/tags/기획/" style="font-size: 13.33px;">기획</a> <a href="/tags/나물투데이/" style="font-size: 10px;">나물투데이</a> <a href="/tags/남북한/" style="font-size: 10px;">남북한</a> <a href="/tags/넷플릭스/" style="font-size: 10px;">넷플릭스</a> <a href="/tags/노동력/" style="font-size: 10px;">노동력</a> <a href="/tags/노밀사태/" style="font-size: 10px;">노밀사태</a> <a href="/tags/논리/" style="font-size: 10px;">논리</a> <a href="/tags/동반자/" style="font-size: 10px;">동반자</a> <a href="/tags/디즈니/" style="font-size: 10px;">디즈니</a> <a href="/tags/리눅스/" style="font-size: 10px;">리눅스</a> <a href="/tags/마이크로소프트/" style="font-size: 10px;">마이크로소프트</a> <a href="/tags/마케터/" style="font-size: 10px;">마케터</a> <a href="/tags/마케팅/" style="font-size: 10px;">마케팅</a> <a href="/tags/먹거리혁신/" style="font-size: 10px;">먹거리혁신</a> <a href="/tags/무역적자/" style="font-size: 13.33px;">무역적자</a> <a href="/tags/무역전쟁/" style="font-size: 10px;">무역전쟁</a> <a href="/tags/무역확장법/" style="font-size: 10px;">무역확장법</a> <a href="/tags/미국/" style="font-size: 20px;">미국</a> <a href="/tags/버전/" style="font-size: 10px;">버전</a> <a href="/tags/보다폰/" style="font-size: 10px;">보다폰</a> <a href="/tags/비용/" style="font-size: 10px;">비용</a> <a href="/tags/비트/" style="font-size: 10px;">비트</a> <a href="/tags/빅딜/" style="font-size: 10px;">빅딜</a> <a href="/tags/사티아나델라/" style="font-size: 10px;">사티아나델라</a> <a href="/tags/섬유산업/" style="font-size: 10px;">섬유산업</a> <a href="/tags/소비트렌드/" style="font-size: 10px;">소비트렌드</a> <a href="/tags/수익/" style="font-size: 10px;">수익</a> <a href="/tags/수입/" style="font-size: 10px;">수입</a> <a href="/tags/수출/" style="font-size: 10px;">수출</a> <a href="/tags/스타트업/" style="font-size: 10px;">스타트업</a> <a href="/tags/식음료/" style="font-size: 10px;">식음료</a> <a href="/tags/아마존/" style="font-size: 13.33px;">아마존</a> <a href="/tags/아시아나항공/" style="font-size: 10px;">아시아나항공</a> <a href="/tags/알고리즘-면접/" style="font-size: 10px;">알고리즘 면접</a> <a href="/tags/언어-변경/" style="font-size: 10px;">언어 변경</a> <a href="/tags/업그레이드/" style="font-size: 10px;">업그레이드</a> <a href="/tags/에르도안/" style="font-size: 10px;">에르도안</a> <a href="/tags/에티오피아/" style="font-size: 10px;">에티오피아</a> <a href="/tags/엔화/" style="font-size: 10px;">엔화</a> <a href="/tags/역사/" style="font-size: 10px;">역사</a> <a href="/tags/오프라인/" style="font-size: 10px;">오프라인</a> <a href="/tags/우분투/" style="font-size: 13.33px;">우분투</a> <a href="/tags/월드컵/" style="font-size: 10px;">월드컵</a> <a href="/tags/월마트/" style="font-size: 10px;">월마트</a> <a href="/tags/위안화/" style="font-size: 10px;">위안화</a> <a href="/tags/유럽/" style="font-size: 10px;">유럽</a> <a href="/tags/의도/" style="font-size: 10px;">의도</a> <a href="/tags/의혹/" style="font-size: 10px;">의혹</a> <a href="/tags/이동통신사/" style="font-size: 10px;">이동통신사</a> <a href="/tags/이머징마켓/" style="font-size: 10px;">이머징마켓</a> <a href="/tags/인도/" style="font-size: 13.33px;">인도</a> <a href="/tags/일본/" style="font-size: 13.33px;">일본</a> <a href="/tags/잃어버린20년/" style="font-size: 10px;">잃어버린20년</a> <a href="/tags/자동차/" style="font-size: 10px;">자동차</a> <a href="/tags/장점어필/" style="font-size: 10px;">장점어필</a> <a href="/tags/재정적자/" style="font-size: 10px;">재정적자</a> <a href="/tags/전자상거래/" style="font-size: 10px;">전자상거래</a> <a href="/tags/제휴/" style="font-size: 10px;">제휴</a> <a href="/tags/주가/" style="font-size: 10px;">주가</a> <a href="/tags/중계권료/" style="font-size: 10px;">중계권료</a> <a href="/tags/중국/" style="font-size: 13.33px;">중국</a> <a href="/tags/지원금/" style="font-size: 10px;">지원금</a> <a href="/tags/철도/" style="font-size: 10px;">철도</a> <a href="/tags/취업/" style="font-size: 10px;">취업</a> <a href="/tags/취준생/" style="font-size: 10px;">취준생</a> <a href="/tags/콘셉트/" style="font-size: 10px;">콘셉트</a> <a href="/tags/쿠엔즈버킷/" style="font-size: 10px;">쿠엔즈버킷</a> <a href="/tags/클라우드/" style="font-size: 10px;">클라우드</a> <a href="/tags/타겟팅/" style="font-size: 10px;">타겟팅</a> <a href="/tags/터키/" style="font-size: 10px;">터키</a> <a href="/tags/투자/" style="font-size: 10px;">투자</a> <a href="/tags/트럼프/" style="font-size: 16.67px;">트럼프</a> <a href="/tags/팍스시니카/" style="font-size: 10px;">팍스시니카</a> <a href="/tags/폭스/" style="font-size: 10px;">폭스</a> <a href="/tags/플라자합의/" style="font-size: 13.33px;">플라자합의</a> <a href="/tags/플립카트/" style="font-size: 10px;">플립카트</a> <a href="/tags/한반도/" style="font-size: 10px;">한반도</a> <a href="/tags/혁신/" style="font-size: 10px;">혁신</a> <a href="/tags/홀푸드/" style="font-size: 10px;">홀푸드</a> <a href="/tags/홍보/" style="font-size: 13.33px;">홍보</a> <a href="/tags/환율/" style="font-size: 13.33px;">환율</a> <a href="/tags/환율주권/" style="font-size: 10px;">환율주권</a>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+    
+
+    <!-- ads -->
+    <div style="text-align: center;">
+<span>
+<style type="text/css">
+    @media(max-width: 420px) { .adsize { height: 100px; } }
+</style>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 상단_하단_반응형 -->
+<ins class="adsbygoogle adsize" style="display:block" data-ad-client="ca-pub-6371292217786920" data-ad-slot="6070330978" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</span>
+</div>    
+
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <div id="toTop" class="fa fa-angle-up"></div>
+<!-- Top 버튼 -->
+<script type="text/javascript">
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 500) {
+                $('#toTop').fadeIn();
+                $('#toTop').css('left', $('#sidebar').offset().left);
+            } else {
+                $('#toTop').fadeOut();
+            }
+        });
+        
+        $("#toTop").click(function() {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 400);
+            return false;
+        });
+    });
+</script>
+
+<footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 YongEun Noh, Yura Son</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_shortname = 'mapley';
+    
+    
+    var disqus_url = 'http://nali21c.github.io/2018/09/03/locality/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+
