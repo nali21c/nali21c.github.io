@@ -21,7 +21,7 @@
 <meta property="og:description" content="안녕하세요. 이번 글에서는 Locality에 대해서 알아보겠습니다. 호기심을 더하기 위해서 문제 하나 내 볼께요. 두 가지 중에 어느 것이 더 빠를까요? 1234567891011// 1번int a[100][100];for(i=0; i&amp;lt;100; i++) &amp;#123;    for(j=0; j&amp;lt;100; j++)    &amp;#123;        a[i]">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://nali21c.github.io/images/locality.PNG">
-<meta property="og:updated_time" content="2018-09-03T06:05:24.537Z">
+<meta property="og:updated_time" content="2018-09-03T06:17:41.982Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="locality 개념">
 <meta name="twitter:description" content="안녕하세요. 이번 글에서는 Locality에 대해서 알아보겠습니다. 호기심을 더하기 위해서 문제 하나 내 볼께요. 두 가지 중에 어느 것이 더 빠를까요? 1234567891011// 1번int a[100][100];for(i=0; i&amp;lt;100; i++) &amp;#123;    for(j=0; j&amp;lt;100; j++)    &amp;#123;        a[i]">
@@ -259,14 +259,14 @@ ga('send', 'pageview');
 <li style="list-style: none"><input type="checkbox"> ‘a카페’ 근처의 맛집 찾아보기</li>
 <li style="list-style: none"><input type="checkbox"> 등등</li>
 </ul>
+<p><img src="/images/MemoryStructure.PNG" width="600em" height="600em" align="center"></p>
+<p>이제 조금 이해가 되셨나요? 결론적으로는 CPU가 Memory로부터 Data를 가져오는 데 있어서 <strong>가장 최근 영역</strong>에, <strong>가장 접근하기 가까운 영역</strong>에 Data를 저장하면 훨씬 효과적이라는 것입니다.</p>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hc-7+2h-1m-4u" data-ad-client="ca-pub-6371292217786920" data-ad-slot="4938542662"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+</script> 
 
-<p>이제 조금 이해가 되셨나요? 결론적으로는 CPU가 Memory로부터 Data를 가져오는 데 있어서 <strong>가장 최근 영역</strong>에, <strong>가장 접근하기 가까운 영역</strong>에 Data를 저장하면 훨씬 효과적이라는 것입니다.</p>
-<p><img src="/images/MemoryStructure.PNG" width="600em" height="600em" align="center"></p>
 <h2 id="대표적인-Locality의-종류"><a href="#대표적인-Locality의-종류" class="headerlink" title="대표적인 Locality의 종류"></a>대표적인 Locality의 종류</h2><h5 id="1-Temporal-locality"><a href="#1-Temporal-locality" class="headerlink" title="1. Temporal locality"></a>1. Temporal locality</h5><ul>
 <li>설명<ul>
 <li>최근 사용되었던 기억 장소들이 집중적으로 엑세스되는 경향.</li>
