@@ -8,11 +8,11 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>MarIt&#39;s Blog</description>
-    <pubDate>Mon, 03 Sep 2018 06:17:41 GMT</pubDate>
+    <pubDate>Mon, 03 Sep 2018 06:23:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>locality 개념</title>
+      <title>[컴퓨터구조] locality 개념</title>
       <link>http://nali21c.github.io/2018/09/03/locality/</link>
       <guid>http://nali21c.github.io/2018/09/03/locality/</guid>
       <pubDate>Mon, 03 Sep 2018 05:01:45 GMT</pubDate>
