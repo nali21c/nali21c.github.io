@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
    
     
@@ -12,19 +12,19 @@
     
         <meta name="keywords" content="locality 정의,locality란,spatial locality,temporal locality,알고리즘 면접">
     
-    <meta name="description" content="안녕하세요. 이번 글에서는 Locality에 대해서 알아보겠습니다. 호기심을 더하기 위해서 문제 하나 내 볼께요. 두 가지 중에 어느 것이 더 빠를까요? 1234567891011// 1번int a[100][100];for(i=0; i&amp;lt;100; i++) &amp;#123;    for(j=0; j&amp;lt;100; j++)    &amp;#123;        a[i]">
+    <meta name="description" content="안녕하세요. 이번 글에서는 Locality에 대해서 알아보겠습니다. 호기심을 더하기 위해서 문제 하나 내 볼께요. 두 가지 중에 어느 것이 더 빠를까요? 1234567891011// 1번int a[100][100];for(i=0; i&amp;lt;100; i++) &amp;#123;    for(j=0; j&amp;lt;100; j++)    &amp;#123;        a[">
 <meta name="keywords" content="locality 정의,locality란,spatial locality,temporal locality,알고리즘 면접">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[컴퓨터구조] locality 개념">
 <meta property="og:url" content="http://nali21c.github.io/2018/09/03/locality/index.html">
 <meta property="og:site_name" content="MarIt&#39;s Blog">
-<meta property="og:description" content="안녕하세요. 이번 글에서는 Locality에 대해서 알아보겠습니다. 호기심을 더하기 위해서 문제 하나 내 볼께요. 두 가지 중에 어느 것이 더 빠를까요? 1234567891011// 1번int a[100][100];for(i=0; i&amp;lt;100; i++) &amp;#123;    for(j=0; j&amp;lt;100; j++)    &amp;#123;        a[i]">
+<meta property="og:description" content="안녕하세요. 이번 글에서는 Locality에 대해서 알아보겠습니다. 호기심을 더하기 위해서 문제 하나 내 볼께요. 두 가지 중에 어느 것이 더 빠를까요? 1234567891011// 1번int a[100][100];for(i=0; i&amp;lt;100; i++) &amp;#123;    for(j=0; j&amp;lt;100; j++)    &amp;#123;        a[">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://nali21c.github.io/images/locality.PNG">
 <meta property="og:updated_time" content="2018-09-03T06:23:08.342Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[컴퓨터구조] locality 개념">
-<meta name="twitter:description" content="안녕하세요. 이번 글에서는 Locality에 대해서 알아보겠습니다. 호기심을 더하기 위해서 문제 하나 내 볼께요. 두 가지 중에 어느 것이 더 빠를까요? 1234567891011// 1번int a[100][100];for(i=0; i&amp;lt;100; i++) &amp;#123;    for(j=0; j&amp;lt;100; j++)    &amp;#123;        a[i]">
+<meta name="twitter:description" content="안녕하세요. 이번 글에서는 Locality에 대해서 알아보겠습니다. 호기심을 더하기 위해서 문제 하나 내 볼께요. 두 가지 중에 어느 것이 더 빠를까요? 1234567891011// 1번int a[100][100];for(i=0; i&amp;lt;100; i++) &amp;#123;    for(j=0; j&amp;lt;100; j++)    &amp;#123;        a[">
 <meta name="twitter:image" content="http://nali21c.github.io/images/locality.PNG">
     
     <link rel="canonical" href="http://nali21c.github.io/2018/09/03/locality/">
@@ -239,15 +239,21 @@ ga('send', 'pageview');
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p><img src="/images/locality.PNG" width="450em" height="400em" align="center"></p>
+            <img src="/images/locality.PNG" width="450em" height="400em" align="center">
+
+
 <p>안녕하세요. 이번 글에서는 Locality에 대해서 알아보겠습니다.</p>
 <p>호기심을 더하기 위해서 문제 하나 내 볼께요. 두 가지 중에 어느 것이 더 빠를까요?</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// 1번</span><br><span class="line"></span><br><span class="line">int a[100][100];</span><br><span class="line"></span><br><span class="line">for(i=0; i&lt;100; i++)</span><br><span class="line"> &#123;</span><br><span class="line">    for(j=0; j&lt;100; j++)</span><br><span class="line">    &#123;</span><br><span class="line">        a[i][j] = 10;    </span><br><span class="line">    &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
 <p> Or</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// 2번</span><br><span class="line"></span><br><span class="line">for(i=0; i&lt;100; i++)</span><br><span class="line"> &#123;</span><br><span class="line">    for(j=0; j&lt;100; j++)</span><br><span class="line">    &#123;</span><br><span class="line">       a[j][i] = 10;    </span><br><span class="line">    &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+
+
 <p>고민을 조금 해보셨나요? 정답은…</p>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6371292217786920" data-ad-slot="9384666126"></ins>
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6371292217786920" data-ad-slot="9384666126"></ins></p>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -258,14 +264,15 @@ ga('send', 'pageview');
 </ul>
 <p>제가 조금 더 쉽게 예를 들어 보겠습니다. 저에게는 짝사랑하는 여자사람이 있어요. 그 여자분은 ‘A 카페’ 의 수박 주스를 아주 좋아한다는 정보를 얻었어요. 마침 운이 좋게 데이트 신청을 하였는데 이번 주 주말에 시간이 될 것 같다고 하는 거예요. 그렇다면 저는 여러 계획을 세울 거예요..</p>
 <ul>
-<li style="list-style: none"><input type="checkbox"> ‘a카페’에서 수박주스 먹기</li>
-<li style="list-style: none"><input type="checkbox"> ‘a카페’ 근처의 맛집 찾아보기</li>
-<li style="list-style: none"><input type="checkbox"> 등등</li>
+<li><input disabled type="checkbox"> ‘a카페’에서 수박주스 먹기</li>
+<li><input disabled type="checkbox"> ‘a카페’ 근처의 맛집 찾아보기</li>
+<li><input disabled type="checkbox"> 등등</li>
 </ul>
-<p><img src="/images/MemoryStructure.PNG" width="600em" height="600em" align="center"></p>
+<img src="/images/MemoryStructure.PNG" width="600em" height="600em" align="center">
+
 <p>이제 조금 이해가 되셨나요? 결론적으로는 CPU가 Memory로부터 Data를 가져오는 데 있어서 <strong>가장 최근 영역</strong>에, <strong>가장 접근하기 가까운 영역</strong>에 Data를 저장하면 훨씬 효과적이라는 것입니다.</p>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hc-7+2h-1m-4u" data-ad-client="ca-pub-6371292217786920" data-ad-slot="4938542662"></ins>
+<p><ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-hc-7+2h-1m-4u" data-ad-client="ca-pub-6371292217786920" data-ad-slot="4938542662"></ins></p>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script> 
@@ -293,7 +300,7 @@ ga('send', 'pageview');
 </li>
 </ul>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6371292217786920" data-ad-slot="9384666126"></ins>
+<p><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6371292217786920" data-ad-slot="9384666126"></ins></p>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
