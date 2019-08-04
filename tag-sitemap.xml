@@ -3,29 +3,64 @@
 
 
     <url>
+        <loc>http://nali21c.github.io/tags/%EB%82%98%EC%8A%A4%EC%B9%B4/</loc>
+        <lastmod>2019-08-04T13:46:20.271Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nali21c.github.io/tags/%EB%AF%B8%EA%B5%AD%EA%B8%88%EC%A3%BC%EB%B2%95/</loc>
+        <lastmod>2019-08-04T13:46:20.271Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nali21c.github.io/tags/%EC%A0%80%EB%8F%84%EC%A3%BC/</loc>
+        <lastmod>2019-08-04T13:46:20.271Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nali21c.github.io/tags/%EB%85%BC%EC%95%8C%EC%BD%94%EC%98%AC-%EB%A7%A5%EC%A3%BC/</loc>
+        <lastmod>2019-08-04T13:46:20.271Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nali21c.github.io/tags/%EB%85%BC%EC%95%8C%EC%BD%94%EC%98%AC/</loc>
+        <lastmod>2019-08-04T13:46:20.271Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://nali21c.github.io/tags/sql-procedure/</loc>
-        <lastmod>2019-08-04T07:53:13.479Z</lastmod>
+        <lastmod>2019-08-04T13:46:04.743Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://nali21c.github.io/tags/%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80-dummy-data/</loc>
-        <lastmod>2019-08-04T07:53:13.479Z</lastmod>
+        <lastmod>2019-08-04T13:46:04.743Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://nali21c.github.io/tags/%EC%89%98%EC%8A%A4%ED%8A%B8%EB%A6%BD%ED%8A%B8-%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80/</loc>
-        <lastmod>2019-08-04T07:53:13.479Z</lastmod>
+        <lastmod>2019-08-04T13:46:04.743Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://nali21c.github.io/tags/sql-%ED%94%84%EB%A1%9C%EC%8B%9C%EC%A0%80/</loc>
-        <lastmod>2019-08-04T07:53:13.479Z</lastmod>
+        <lastmod>2019-08-04T13:46:04.743Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
