@@ -8,14 +8,21 @@
     </url>
 
     <url>
-        <loc>http://nali21c.github.io/categories/Marketing/Econ-Issue/</loc>
-        <lastmod>2019-08-22T12:50:18.230Z</lastmod>
+        <loc>http://nali21c.github.io/categories/Marketing/%EC%B7%A8%EC%97%85%EC%A4%80%EB%B9%84/</loc>
+        <lastmod>2019-09-08T12:29:49.882Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://nali21c.github.io/categories/Marketing/</loc>
+        <lastmod>2019-09-08T12:29:49.882Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://nali21c.github.io/categories/Marketing/Econ-Issue/</loc>
         <lastmod>2019-08-22T12:50:18.230Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -38,13 +45,6 @@
     <url>
         <loc>http://nali21c.github.io/categories/Dev/Basic-Concept/</loc>
         <lastmod>2018-09-03T06:23:08.342Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://nali21c.github.io/categories/Marketing/%EC%B7%A8%EC%97%85%EC%A4%80%EB%B9%84/</loc>
-        <lastmod>2018-07-24T13:35:26.644Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
